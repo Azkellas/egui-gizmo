@@ -149,16 +149,16 @@ impl ExampleApp {
 }
 
 impl eframe::App for ExampleApp {
-    fn update(&mut self, ctx: &egui::Context, _: &mut eframe::Frame) {
-        egui::SidePanel::left("options_panel").show(ctx, |ui| {
+    fn ui(&mut self, ui: &mut egui::Ui, _: &mut eframe::Frame) {
+        egui::SidePanel::left("options_panel").show(ui, |ui| {
             self.draw_options(ui);
         });
 
-        egui::CentralPanel::default().show(ctx, |ui| {
+        egui::CentralPanel::default().show(ui, |ui| {
             self.draw_gizmo(ui);
         });
 
-        ctx.request_repaint();
+        ui.ctx().request_repaint();
     }
 }
 

@@ -15,18 +15,18 @@ authors = ["Urho Laukkarinen <urho.laukkarinen@gmail.com>"]
 transform-gizmo = { version = "0.3.0", path = "crates/transform-gizmo" }
 transform-gizmo-egui = { version = "0.3.0", path = "crates/transform-gizmo-egui" }
 
-egui = "0.33"
-eframe = "0.33"
-emath = "0.33"
-epaint = "0.33"
-ecolor = "0.33"
-glam = { version = "0.30", features = ["mint"] }
+egui = "0.34"
+eframe = "0.34"
+emath = "0.34"
+epaint = "0.34"
+ecolor = "0.34"
+glam = { version = "0.32", features = ["mint"] }
 mint = "0.5"
 enum_dispatch = "0.3.12"
 ahash = "0.8"
 enumset = "1.1"
-bytemuck = "1.24"
-uuid = "1.16"
+bytemuck = "1.25"
+uuid = "1.23"
 [profile.release]
 opt-level = "s"
 panic = "abort"
