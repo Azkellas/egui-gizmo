@@ -150,7 +150,7 @@ impl ExampleApp {
 
 impl eframe::App for ExampleApp {
     fn ui(&mut self, ui: &mut egui::Ui, _: &mut eframe::Frame) {
-        egui::SidePanel::left("options_panel").show(ui, |ui| {
+        egui::Panel::left("options_panel").show(ui, |ui| {
             self.draw_options(ui);
         });
 
